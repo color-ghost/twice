@@ -109,6 +109,9 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .social-link {
+    margin-left: 15px;
+  }
 }
 @media (max-width: 350px) {
   nav a {
