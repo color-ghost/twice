@@ -1,0 +1,115 @@
+.main-container {
+  max-width: 1548px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+.individual-album {
+  display: block;
+  overflow: auto;
+  width: 1025px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: nanum gothic;
+  background: rgba(0,0,0,.1);
+}
+.album-image {
+  display: block;
+  float: left;
+  width: 475px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+.album-info-container {
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 475px;
+  color: white;
+}
+.block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.1);
+  line-height: 0;
+}
+.title {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.release-date {
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.tracklist {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (max-width: 1075px) {
+  .individual-album {
+    width: 525px;
+  }
+  .album-image {
+    float: none;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .album-info-container {
+    float: none;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 700px) {
+  .top-album {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 585px) {
+  .individual-album {
+    width: 90%;
+    margin-top: 5.2vw;
+  }
+  .top-album {
+    margin-top: 0px;
+  }
+  .album-image {
+    width: 90%;
+    margin-top: 4.3vw;
+  }
+  .album-info-container {
+    width: 90%;
+    margin-top: 4.3vw;
+    margin-bottom: 4.3vw;
+  }
+  .tracklist {
+    margin-top: 3.7vw;
+  }
+}
+@media (max-width: 500px) {
+  .block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .title {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .release-date {
+    display: none;
+  }
+  .tracklist {
+    margin-left: 15px;
+    font-size: 10px;
+  }
+}

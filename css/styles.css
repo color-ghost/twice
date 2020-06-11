@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: #7C353D;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background: #7C353D;
+  font-family: oswald;
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 0px solid transparent;
+  color: #e1cd97;
+  text-decoration: none;
+  transition: border-top .1s linear, color .1s linear;
+}
+nav a:hover {
+  border-top: 3px solid white;
+  color: white;
+}
+footer {
+  max-width: 1548px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+}
+.think-twice {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5%;
+  font-family: dancing script;
+  font-size: 35px;
+  text-decoration: none;
+  color: #e1cd97;
+  transition: color .3s;
+}
+.think-twice:hover {
+  color: white;
+}
+.social {
+  float: right;
+  margin-top: 18px;
+  margin-right: 5%;
+  cursor: default;
+}
+.social-link {
+  margin-left: 20px;
+}
+.social-logo {
+  font-size: 27px;
+  color: #e1cd97;
+  transition: color .3s;
+}
+.social-logo:hover {
+  color: white;
+}
+@media (min-width: 1548px) {
+  nav a {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    height: 60px;
+    box-shadow: none;
+  }
+  nav a {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .social-logo:hover {
+    color: #e1cd97;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 350px) {
+  nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
