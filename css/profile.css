@@ -1,0 +1,75 @@
+.maincontainer {
+  max-width: 1548px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.thumbcontainer {
+  position: relative;
+  float: left;
+  width: 27%;
+  padding-bottom: 27%;
+  margin-left: 6%;
+}
+.thumbsflex {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.thumbnail {
+  width: 32%;
+  border-radius: 6px;
+  opacity: .7;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+.thumbnail:hover {
+  opacity: 1;
+}
+.main-img {
+  float: right;
+  width: 55%;
+  max-width: 851px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  margin-right: 6%;
+}
+.phone-photos {
+  display: none;
+  line-height: 0px;
+  margin-bottom: 60px;
+}
+.phone-photos img {
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .thumbcontainer {
+    width: 30%;
+    padding-bottom: 30%;
+    margin-left: 4%;
+  }
+  .main-img {
+    width: 58%;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .thumbcontainer {
+    display: none;
+  }
+  .main-img {
+    display: none;
+  }
+  .phone-photos {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .maincontainer {
+    margin-top: 0px;
+  }
+}
